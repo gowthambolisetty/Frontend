@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>title</title>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+       <tr><td><label>First name</label></td>
+     <td><input type="text" name="FN" placeholder="Ex:Rohit" size="15" required></td></tr>
+    <tr><td><label>Surname</label></td>
+    <td><input type="text" name="SN" placeholder="Ex:Bolisetty" size="15" required></td></tr>
+    <tr><td><label>Mobile Number</label></td>
+    <td><input type="tel" name="MN" placeholder="EX:770-330-4567" size="15" required></td></tr>
+    <tr><td><label>Email</label></td>
+    <td><input type="email " name="EM" placeholder="EX:goat@gmail.com" size="15" required></td></tr>
+    <tr><td><label>Password</label></td>
+    <td><input type="password" name="PW" placeholder="8 characters" size="15" minlength="8" maxlength="8" required></td></tr>
+     <tr><td><label> Confirm Password</label></td>
+    <td><input type="password" name="CPW" placeholder="8 characters" size="15" minlength="8" maxlength="8" required></td></tr>
+    <tr><td><label>DOB</label></td>
+    <td><input type="date"name="DOB" size="15"></td></tr>
+    <tr><td><label>Gender</label></td>
+    <td><input type="radio" name="gender" value="M">Male
+     <input type="radio" name="gender" value="F">Female
+      <input type="radio" name="gender" value="C">Custom </td></tr>
+      <tr><td><label>Select Country</label></td>
+      <td><select name="Country">
+        <option value="India">India</option>
+         <option value="USA">USA</option>
+          <option value="Germany">Germany</option>
+           <option value="Australia">Australia</option>
+      </select></td></tr>
+      <tr><td><label>Upload Picture</label></td>
+      <td><input type="file" name="pic"></td></tr>
+      <tr><td><input type="reset"></td></tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <label>Select Course</label>
+            <select name="Course">
+                <option value="Web"> Full Stack Web Devrlopement</option>
+                <option value="Java">Java Full Stack</option>
+                <option value="python">Python Full Stack</option>
+                <option  value="AI/Data">Python for AI and Data Science</option>
+
+            </select><br>
+            <label>Mode</label>
+            <input type="checkbox" name="mode1" value="online">Online
+            <input type="checkbox" name="mode1" value="online">Offline<br>
+            <label>Comments</label><br>
+            <textarea rows="4" cols="40"></textarea>
+            
+        </fieldset>
+
+          <button class="button" type="input">Submit</button>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </form>
+</body>
+</html>
